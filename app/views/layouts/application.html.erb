@@ -6,6 +6,7 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= include_gon %>
     <%= javascript_include_tag 'application' %>
 
     <style>
@@ -45,7 +46,7 @@
       }
     </style>
   </head>
-  
+
   <body>
     <%= yield %>
   </body>
