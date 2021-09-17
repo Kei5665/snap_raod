@@ -1,24 +1,15 @@
-# README
+## サービス概要
+デリバリースタッフ通しで近道を教え合うサービスです。
+## ターゲット
+山形店のデリバリースタッフ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## ユーザーの抱える問題
+最近新人スタッフがたくさん入ってきた。
+ベテランスタッフが研修期間中に近道を教えてはいるが、期間が短いため教えられる数は限られている。
+お店が忙しい時間帯に道を聞かれても教えられない時がある。
+そうすると人によってはめちゃくちゃ混んでる道を使ったり、迷ったりして場合によっては1時間帰ってこない時もある。
+## 解決方法
+デリバリー歴の長い人や近道を知っている人が経路を投稿することで
+デリバリーを始めたばかりの人でも近道を知ることができる
+## マーケット
+山形店の新人デリバリースタッフ5〜6人
