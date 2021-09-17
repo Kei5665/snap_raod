@@ -1,2 +1,30 @@
-<h1>Maps#index</h1>
-<p>Find me in app/views/maps/index.html.erb</p>
+<h1>ようこそ！スナップロードへ！</h1>
+
+  <div>
+    <div id="result"></div>
+
+    <a href="/all_clone">マップ一覧へ</a>
+    <label for="title">タイトル</label>
+    <input type="text" name="title" id="title">
+
+    <label for="name">あなたのニックネーム</label>
+    <input type="text" name="name" id="name">
+
+    <label for="body">道に関するちょっとしたメモ</label>
+    <textarea name="body" id="body" cols="20" rows="3"></textarea>
+  </div>
+
+  <div>
+    <h2>使い方</h2>
+    <p>クリックでポイントを作成し、ダブルクリックで地図を作成します</p>
+    <p>現段階では作成した道の削除機能はございません。ご了承ください</p>
+    <p>もし道を作成途中で作り直したい場合は画面をリロードしてください</p>
+  </div>
+
+    <div id="map"></div>
+    <div id="bar">
+      <h3>道を作りたい場所を検索</h3>
+      <p class="auto"><input type="text" id="autoc"/></p>
+      <p>削除機能まだ作成途中</p>
+      <p>道の削除は<a id="clear" href="#">ここをクリック</a></p>
+    </div>
