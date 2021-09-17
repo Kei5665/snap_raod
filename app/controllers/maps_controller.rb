@@ -45,4 +45,8 @@ class MapsController < ApplicationController
     )
     @json.save!
   end
+
+  def show
+
+  end
 end
