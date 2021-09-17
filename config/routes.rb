@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
   root 'welcome_pages#index'
 
-  resources :maps do
-    collection do
-      get 'trial'
-    end  
-  end
+  resources :maps
+  resources :trials
   get '/maps_all',to: 'maps#top'
 end
