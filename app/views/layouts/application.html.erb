@@ -140,7 +140,7 @@ function runSnapToRoad(path) {
       $('#result').text('地図を作成しました！');
       // Ajax通信を開始
       $.ajax({
-        url: '/map/new',
+        url: '/maps',
         type: 'POST',
         dataType: 'json',
         data: {
