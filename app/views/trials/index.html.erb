@@ -3,7 +3,7 @@
     <div id="result"></div>
 
     <%= link_to 'ホームへ', root_path %>
-    <%= link_to '作成したマップ一覧へ', trials_all_path %>
+    <%= link_to 'マップ一覧へ', trials_all_path %>
     <label for="title">タイトル</label>
     <input type="text" name="title" id="title">
 
@@ -15,7 +15,10 @@
 
 　<div>
     <h2>使い方</h2>
-    <p>クリックでポイントを作成し、ダブルクリックで地図を作成します</p>
+    <p>クリックでポイントを作成し、ダブルクリックで道を作成します</p>
+    <p>青い線が表示され、ページ上部に「道を作成しました！」のメッセージが出たら成功です</p>
+    <p>作成した道はマップ一覧ページで見ることができます</p>
+　　<h2>注意</h2>
     <p>現段階では作成した道の削除機能はございません。ご了承ください</p>
     <p>もし道を作成途中で作り直したい場合は画面をリロードしてください</p>
   </div>
@@ -121,7 +124,7 @@ function runSnapToRoad(path) {
     let name = $("#name").val();
     let body = $("#body").val();
 
-      $('#result').text('地図を作成しました！');
+      $('#result').text('道を作成しました！');
       // Ajax通信を開始
       $.ajax({
         url: '/maps',
