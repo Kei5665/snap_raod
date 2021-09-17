@@ -1,2 +1,0 @@
-class Trial < ApplicationRecord
-end
