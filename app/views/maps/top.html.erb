@@ -1,4 +1,4 @@
-    <a href="/map">地図を作成する</a>
+    <%= link_to '地図を作成する', maps_path %>
     <div id="map"></div>
     <div id="bar">
       <p class="auto"><input type="text" id="autoc"/></p>
@@ -20,7 +20,7 @@
 
     function initialize() {
         var mapOptions = {
-            zoom: 19,
+            zoom: 18,
             center: {lat: 38.235703532607666, lng: 140.32471532697008,}
         };
         map = new google.maps.Map(document.getElementById('map'), mapOptions);

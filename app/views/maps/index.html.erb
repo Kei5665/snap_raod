@@ -3,7 +3,8 @@
   <div>
     <div id="result"></div>
 
-    <a href="/all_clone">マップ一覧へ</a>
+    <%= link_to 'ホームへ', root_path %>
+    <%= link_to 'マップ一覧へ', maps_all_path %>
     <label for="title">タイトル</label>
     <input type="text" name="title" id="title">
 
@@ -42,7 +43,7 @@ var snappedCoordinates = [];
 
 function initialize() {
   var mapOptions = {
-    zoom: 19,
+    zoom: 18,
     center: {lat: 38.235703532607666, lng: 140.32471532697008,}
   };
   map = new google.maps.Map(document.getElementById('map'), mapOptions);
