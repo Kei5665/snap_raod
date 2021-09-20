@@ -1,9 +1,9 @@
-  <h1>ようこそ！スナップロードへ！</h1>
+<h1>ようこそ！スナップロードへ！</h1>
 
+  <div>
     <div id="result"></div>
 
-    <%= link_to 'ホームへ', select_path %>
-    <%= link_to 'マップ一覧へ', trials_all_path %>
+    <%= link_to 'マップ一覧へ', maps_path %>
     <label for="title">タイトル</label>
     <input type="text" name="title" id="title">
 
@@ -12,9 +12,10 @@
 
     <label for="body">道に関するちょっとしたメモ</label>
     <textarea name="body" id="body" cols="20" rows="3"></textarea>
+  </div>
 
-　<div>
-    <h2>使い方</h2>
+  <div>
+    <h2>使い方</h2>    
     <p>1. 最初に道の名前、あなたの名前（架空で構いません）、道に関するちょっとしたメモを入力してください</p>
     <p>2. クリックでポイントを作成し、ダブルクリックで道を作成します</p>
     <p>3. 青い線が表示され、ページ上部に「道を作成しました！」のメッセージが出たら成功です</p>
@@ -22,7 +23,7 @@
     <p>もし道を作成途中で作り直したい場合は画面をリロードしてください</p>
 　　<h2>注意</h2>
     <p>現段階では作成した道の削除機能はございません。ご了承ください</p>
-  </div>
+  </div>  </div>
 
     <div id="map"></div>
     <div id="bar">
@@ -45,8 +46,8 @@ var snappedCoordinates = [];
 
 function initialize() {
   var mapOptions = {
-    zoom: 16,
-    center: {lat: 35.68120132114741, lng: 139.76590171082088,}
+    zoom: 18,
+    center: {lat: 38.235703532607666, lng: 140.32471532697008,}
   };
   map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
@@ -170,4 +171,4 @@ function drawSnappedPolyline() {
 }
 
 $(window).load(initialize);
-    </script>
+  </script>
