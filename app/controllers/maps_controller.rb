@@ -1,9 +1,7 @@
 class MapsController < ApplicationController
   protect_from_forgery
-  def index
-  end
 
-  def top
+  def index
     @hash_all = Map.all
 
     @json_array = []
@@ -29,6 +27,8 @@ class MapsController < ApplicationController
     gon.names = @name_array
     gon.bodys = @body_array
   end
+
+  def new; end
 
   def create 
     json =  params[:data]
