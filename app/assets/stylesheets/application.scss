@@ -13,26 +13,3 @@
  *= require_tree .
  *= require_self
  */
-.top {
-    background-image: url("<%= asset_path('Web 1920 – 1.jpg') %>");
-    background-size:90%;
-    background-position:right;
-    height: 100%;
-    width: 100%;
-    position:relative;
-}
-.btn {
-    width:40%;
-    padding:10px 80px;
-    text-align:center;
-}
-.btn--orange,
-a.btn--orange {
-  font-size:6rem;
-  position: absolute;
-  bottom:130px;
-  left:10rem;
-}
-a.btn--radius {
-   border-radius: 100vh;
-}
